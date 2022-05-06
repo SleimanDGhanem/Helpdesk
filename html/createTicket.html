@@ -134,14 +134,13 @@
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-3"></div>
-          <div class="col-sm-3">
+          <div class="col-sm-2 text-center">
             <h1>Create Ticket</h1>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-10">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Project Add</li>
+              <li class="breadcrumb-item active">Create Ticket</li>
             </ol>
           </div>
         </div>
@@ -150,63 +149,56 @@
 
     <!-- Main content -->
     <section class="content">
-      <div class="row justify-content-center">
-        
+      <div class="row">
+        <div class="col-md-3"></div>
         <div class="col-md-6">
-          <form action="../html/approveAccount.html" method="POST">
           <div class="card card-primary">
             <div class="card-header">
-              <h3 class="card-title">General</h3>
-              
-              <div class="card-tools">
-                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-                  <i class="fas fa-minus"></i>
-                </button>
-              </div>
+              <h3 class="card-title">Enter Required information</h3>
+
             </div>
+            <form action="" method="post">
             <div class="card-body">
-              
               <div class="form-group">
                 <label for="title">Title</label>
-                <input type="text" id="title" name="title" class="form-control">
+                <input type="text" id="title" name="title" class="form-control" required>
               </div>
               <div class="form-group">
-                <label for="description">Description</label>
-                <textarea id="description" class="form-control" name="description"  rows="4"></textarea>
+                <label for="description">description</label>
+                <textarea id="description" class="form-control" name="description" rows="4" required></textarea>
               </div>
               <div class="form-group">
-                <label for="file">File input</label>
-                <div class="input-group">
-                  <div class="custom-file">
-                    <input type="file" class="custom-file-input" name="file" id="file">
-                    <label class="custom-file-label" for="file">Choose file</label>
-                  </div>
-                </div>
+                <label for="hardware">Hadware Type</label>
+                <input type="text" id="hardware" name="hardware" class="form-control" required>
+              </div>
             </div>
-          
             <!-- /.card-body -->
           </div>
           <!-- /.card -->
-          </div>
-          
+        </div>
+
+      </div>
           <div class="row">
-            <div class="col-12">
+            <div class="col-3"></div>
+            <div class="col-6">
               <a href="#" class="btn btn-secondary">Cancel</a>
-              <input onclick="window.location.href='listViewAll.html';" type="submit" value="Create Ticket" class="btn btn-success float-right">
+              <input type="submit" value="Create new Project" class="btn btn-success float-right">
             </div>
           </div>
         </form>
-        </div>
-        </div>
-        </section>
-        </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+
   <!-- jQuery -->
-<script src="../../plugins/jquery/jquery.min.js"></script>
+<script src="../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- overlayScrollbars -->
-<script src="../../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
-<script src="../../dist/js/adminlte.min.js"></script>
+<script src="../dist/js/adminlte.min.js"></script>
 </body>
 </html>
