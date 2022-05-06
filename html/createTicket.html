@@ -25,7 +25,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="../../index3.html" class="nav-link">Home</a>
+        <a href="dashboard.html" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
@@ -113,7 +113,12 @@
                 </li>
               </ul>
             </li>
-          
+            <li class="nav-item">
+              <a href="createTicket.html" class="nav-link">
+                <i class="nav-icon fas fa-plus"></i>
+                <p>Create Ticket</p>
+              </a>
+            </li>
             <li class="nav-item">
               <a href="settings.html" class="nav-link">
                 <i class="nav-icon fas fa-gears"></i>
@@ -139,7 +144,7 @@
           </div>
           <div class="col-sm-10">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
               <li class="breadcrumb-item active">Create Ticket</li>
             </ol>
           </div>
@@ -148,7 +153,7 @@
     </section>
 
     <!-- Main content -->
-    <form action="" method="post">
+    <!-- <form action="" method="post"> -->
     <section class="content">
       <div class="row">
         <div class="col-md-3"></div>
@@ -182,12 +187,12 @@
           <div class="row">
             <div class="col-3"></div>
             <div class="col-6">
-              <a href="#" class="btn btn-secondary">Cancel</a>
-              <input type="submit" value="Create new Project" class="btn btn-success float-right">
+              <a href="dashboard.html" class="btn btn-secondary">Cancel</a>
+              <input onclick="window.location.href = 'dashboard.html';" type="submit" value="Create new Project" class="btn btn-success float-right">
             </div>
           </div>
     </section>
-    </form>
+    <!-- </form> -->
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
