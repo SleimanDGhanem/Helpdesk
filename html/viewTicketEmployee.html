@@ -255,7 +255,14 @@
                 <p class="text-sm">Client
                   <b class="d-block">Tony Chicken</b>
                 </p>
-                <button onclick="window.location.href= '#';" type="submit" class="btn btn-success mt-2 float-right ">Close</button>
+                <!-- <form> -->
+                  <textarea id="reason" name="reason" class="form-control mb-4 mt-3" placeholder="Enter reason for status change..."></textarea>
+                  <select class="custom-select form-control-border" name="status" id="status">
+                    <option>blocked</option>
+                    <option>closed</option>
+                  </select>
+                  <button onclick="window.location.href= '#';" type="submit" class="btn btn-primary mt-2 float-right ">Change Status</button>
+                <!-- </form> -->
               </div>
             </div>
           </div>
