@@ -25,15 +25,18 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="dashboard.html" class="nav-link">Home</a>
+        <a href="dashboardemployee.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
       </li>
     </ul>
 
   </nav>
   <!-- /.navbar -->
   
-   <!-- Main Sidebar Container -->
-   <aside class="main-sidebar sidebar-dark-primary elevation-4 mr-4">
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4 mr-4">
     <!-- Brand Logo -->
     <a href="../../index3.html" class="brand-link">
       <img src="../images/chip.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
@@ -59,13 +62,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="listViewOpen.html" class="nav-link">
+                <a href="listViewOpenEmployee.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Open Tickets</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="listViewAll.html" class="nav-link">
+                <a href="listViewAllEmployee.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>All Tickets</p>
                 </a>
@@ -73,9 +76,15 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="createTicket.html" class="nav-link">
+            <a href="approveAccount.html" class="nav-link">
+              <i class="nav-icon fas fa-thumbs-up"></i>
+              <p>Approve Accounts</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="generateAccount.html" class="nav-link">
               <i class="nav-icon fas fa-plus"></i>
-              <p>Create Ticket</p>
+              <p>Generate Account</p>
             </a>
           </li>
         </ul>
@@ -84,8 +93,9 @@
     </div>
     <!-- /.sidebar -->
   </aside> 
-    <!-- Content Section -->
-    <!-- Content Wrapper. Contains page content -->
+
+      <!-- card section -->
+      <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
       <!-- Content Header (Page header) -->
       <section class="content-header">
@@ -96,13 +106,13 @@
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="dashboardemployee.html">Home</a></li>
                 <li class="breadcrumb-item active">All Tickets</li>
               </ol>
             </div>
           </div>
         </div><!-- /.container-fluid -->
-      </section><!--end of header-->
+      </section>
   
       <!-- Main content -->
       <section class="content">
@@ -110,20 +120,20 @@
         <!-- Default box -->
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">All Tickets</h3>
+            <h3 class="card-title">Tickets</h3>
   
-            <div class="card-tools"><!--search tool-->
-            <div class="input-group input-group-sm" style="width: 200px;">
-              <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-
-              <div class="input-group-append">
-                <button type="submit" class="btn btn-default">
-                  <i class="fas fa-search"></i><!--end of search tool-->
-                </button>
+            <div class="card-tools">
+              <div class="input-group input-group-sm" style="width: 200px;">
+                <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+  
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-default">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          </div><!--end of header-->
           <div class="card-body p-0">
             <table class="table table-striped projects">
                 <thead>
@@ -134,6 +144,7 @@
                         <th style="width: 20%">
                             Title
                         </th>
+
                         <th style="width: 8%" class="text-center">
                             Status
                         </th>
@@ -155,16 +166,16 @@
                                 Created 01.01.2019
                             </small>
                         </td>
-
                         <td class="project-state">
                             <span class="badge badge-success">Closed</span>
                         </td>
                         <td class="project-actions text-center">
-                            <a class="btn btn-primary btn-sm" href="viewTicket.html">
+                            <a class="btn btn-primary btn-sm" href="viewTicketEmployee.html">
                                 <i class="fas fa-folder">
                                 </i>
                                 View
                             </a>
+
                         </td>
                     </tr>
                     <tr>
@@ -184,11 +195,12 @@
                             <span class="badge badge-danger">Canceled</span>
                         </td>
                         <td class="project-actions text-center">
-                            <a class="btn btn-primary btn-sm" href="viewTicket.html">
+                            <a class="btn btn-primary btn-sm" href="viewTicketEmployee.html">
                                 <i class="fas fa-folder">
                                 </i>
                                 View
                             </a>
+
                         </td>
                     </tr>
                 </tbody>
@@ -199,7 +211,7 @@
         <!-- /.card -->
   
       </section>
-  </div>
+      </div>
   <!-- jQuery -->
 <script src="../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
