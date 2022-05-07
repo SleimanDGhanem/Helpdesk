@@ -109,20 +109,28 @@
       <!-- Default box -->
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Open Tickets</h3>
+          <button onclick="sort()" id = "sort" class="btn btn-dark btn-sm">
+            <i class="fas fa-align-right">
+            </i>
+            Newest to Oldest
+        </button>
 
-          <div class="card-tools">
-            <div class="input-group input-group-sm" style="width: 200px;">
-              <input type="text" id="search" name="search" class="form-control float-right" onkeyup="myFunction()" placeholder="Search">
+          <div class="card-tools"><!--search tool-->
+            
+          <div class="input-group input-group-sm" style="width: 200px;">
 
-              <div class="input-group-append">
-                <button type="submit" class="btn btn-default">
-                  <i class="fas fa-search"></i>
-                </button>
-              </div>
+            <input type="text" id="search" onkeyup="search()" name="search" class="form-control float-right" placeholder="Search">
+            
+            <div class="input-group-append">
+              <btn class="btn btn-default">
+                <i class="fas fa-search"></i><!--end of search tool-->
+              </btn>
             </div>
+            
           </div>
         </div>
+
+        </div><!--end of header-->
         <div class="card-body p-0">
           <table id="table" class="table table-striped projects">
               <thead>
@@ -198,31 +206,8 @@
     </div>
     </div>
 
- <!-- search function -->
-  <script>
-    function myFunction() {
-      console.log("hello")
-      // Declare variables
-      var input, filter, table, tr, td, i, txtValue;
-      input = document.getElementById("search");
-      filter = input.value.toUpperCase();
-      table = document.getElementById("table");
-      tr = table.getElementsByTagName("tr");
-    
-      // Loop through all table rows, and hide those who don't match the search query
-      for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[1];
-        if (td) {
-          txtValue = td.textContent || td.innerText;
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            tr[i].style.display = "";
-          } else {
-            tr[i].style.display = "none";
-          }
-        }
-      }
-    }
-    </script>
+ <!-- search and sort function -->
+  <script src="../js/functions.js"></script>
 <!-- jQuery -->
 <script src="../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
